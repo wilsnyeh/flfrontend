@@ -6,8 +6,8 @@ window.addEventListener('DOMContentLoaded', async () => {
         const selectTag = document.getElementById('state');
         for (let state of data.states) {
             const option = document.createElement('option')
-            option.value = Object.values(state)[0];
-            option.innerHTML = Object.keys(state)[0];
+            option.value = state.abbreviation;
+            option.innerHTML = state.name;
             selectTag.appendChild(option)
             }
         const formTag = document.getElementById('create-location-form');
@@ -27,7 +27,6 @@ window.addEventListener('DOMContentLoaded', async () => {
             if (response.ok) {
                 formTag.reset();
                 const newLocation = await response.json();
-                console.log(newLocation);
                 }
             });
         }
