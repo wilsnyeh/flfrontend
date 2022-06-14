@@ -25,10 +25,10 @@
                 <a class="nav-link d-none" aria-current="page" href="new-location.html">New location</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active d-none" aria-current="page" href="new-conference.html">New conference</a>
+                <a class="nav-link d-none" aria-current="page" href="new-conference.html">New conference</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="new-presentation.html">New presentation</a>
+              <a class="nav-link active" aria-current="page" href="new-presentation.html">New presentation</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -45,32 +45,28 @@
       <div class="row">
         <div class="offset-3 col-6">
           <div class="shadow p-4 mt-4">
-            <h1>Create a new conference</h1>
-            <form id="create-conference-form">
-              <div class="form-floating mb-3">
-                <input placeholder="Conference name" required type="text" name="name" id="name" class="form-control">
-                <label for="name">Conference name</label>
-              </div>
-              <div class="form-floating mb-3">
-                  <input placeholder="Starts" required type="date" name="starts" id="starts" class="form-control">
-                  <label for="starts">Starts</label>
+            <h1>Create a new presentation</h1>
+            <form id="create-presentation-form">
+                <div class="form-floating mb-3">
+                    <input placeholder="Name" required type="text" name="presenter_name" id="presenter_name" class="form-control">
+                    <label for="presenter_name">Name</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input placeholder="Ends" required type="date" name="ends" id="ends" class="form-control">
-                    <label for="ends">Ends</label>
+                    <input placeholder="Email" required type="text" name="presenter_email" id="presenter_email" class="form-control">
+                    <label for="presenter_email">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input placeholder="Company name" type="text" name="company_name" id="company_name" class="form-control">
+                    <label for="company_name">Company</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input placeholder="Presentation name" required type="text" name="title" id="title" class="form-control">
+                  <label for="name">Presentation name</label>
                 </div>
                 <div class="mb-3">
-                  <label for="description">Description</label>
-                  <textarea placeholder="Enter Description" required type="text" name="description" id="description" class="form-control" rows="4"></textarea>
+                  <label for="synopsis">Synopsis</label>
+                  <textarea placeholder="Synopsis" required type="text" name="synopsis" id="synopsis" class="form-control" rows="4"></textarea>
                 </div>
-              <div class="form-floating mb-3">
-                <input placeholder="Max presentations" required type="number" name="max_presentations" id="max_presentations" class="form-control">
-                <label for="max_presentations">Max presentations</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input placeholder="Max attendees" required type="number" name="max_attendees" id="max_attendees" class="form-control">
-                <label for="max_attendees">Max attendees</label>
-              </div>
               <div class="mb-3">
                 <select required id="location" name='location' class="form-select">
                   <option selected value="">Choose a location</option>
