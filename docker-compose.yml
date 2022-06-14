@@ -103,5 +103,6 @@ services:
       - HOST=0.0.0.0
       - PORT=3001
       - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
     ports:
       - "3001:3001"
